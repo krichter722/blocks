@@ -1,9 +1,15 @@
 #!/usr/bin/env python3.3
 
 from setuptools import setup
+import sys
+
+app_name = 'blocks'
+
+if sys.version_info < (3,):
+    raise Exception("%s's setup.py needs to be run with python3" % (app_name,))
 
 setup(
-    name='blocks',
+    name=app_name,
     version='0.1.4',
     author='Gabriel de Perthuis',
     author_email='g2p.code+blocks@gmail.com',

@@ -11,7 +11,7 @@ install:
 - wget
     https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
     https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-- wget --output-document=tests/linux.uml https://raw.github.com/g2p/kernels/master/linux.uml
+- wget --output-document=tests/kernel64-3.19.8.xz uml.devloop.org.uk/kernels/kernel64-3.19.8.xz && cd tests && unxz kernel64-3.19.8.xz && mv kernel64-3.19.8 linux.uml && cd ..
 - chmod +x tests/linux.uml
 - export PATH=$PATH:$HOME/.local/bin:$PWD/btrfs-progs
 - export PIP_USE_MIRRORS=true PIP_DOWNLOAD_CACHE=~/.cache/pip

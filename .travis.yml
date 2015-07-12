@@ -11,7 +11,7 @@ install:
 - wget
     https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
     https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-    https://mirrors.kernel.org/ubuntu/pool/main/a/augeas/libaugeas0_1.0.0-0ubuntu1_amd64.deb
+#    https://mirrors.kernel.org/ubuntu/pool/main/a/augeas/libaugeas0_1.0.0-0ubuntu1_amd64.deb
 - curl --compressed https://raw.github.com/g2p/kernels/master/linux.uml -o tests/linux.uml
 - chmod +x tests/linux.uml
 - sudo dpkg -i libaugeas0*deb

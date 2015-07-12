@@ -25,7 +25,7 @@ install:
     coverage
 - git clone https://github.com/g2p/bcache-tools.git
 - git clone https://git.kernel.org/pub/scm/linux/kernel/git/mason/btrfs-progs.git
-- make -C btrfs-progs
+- cd btrfs-progs && sudo apt-get install --no-install-recommends asciidoc xmlto && ./autogen.sh && ./configure && make -j16 && sudo make install && cd ..
 - make -C bcache-tools
 - sudo make -C bcache-tools install
 - sudo mkdir -vp /etc/lvm/backup /etc/lvm/archive

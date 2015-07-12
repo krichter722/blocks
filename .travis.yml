@@ -11,7 +11,6 @@ install:
 - wget
     https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
     https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-#    https://mirrors.kernel.org/ubuntu/pool/main/a/augeas/libaugeas0_1.0.0-0ubuntu1_amd64.deb
 - wget --output-document=tests/linux.uml https://raw.github.com/g2p/kernels/master/linux.uml
 - chmod +x tests/linux.uml
 - export PATH=$PATH:$HOME/.local/bin:$PWD/btrfs-progs
